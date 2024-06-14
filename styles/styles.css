@@ -1,0 +1,11 @@
+body{
+    background-color:darkgrey;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+nav{
+    color:black;
+    justify-content: space-around;
+    display: flex;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

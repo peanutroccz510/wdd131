@@ -1,0 +1,87 @@
+body {
+    width: 100%;
+    height: auto;
+    background-color: gray;
+    font-family:'Times New Roman', Times, serif
+
+}
+header {
+    background-color: white;
+    font-size: 12px;
+    text-align: center;
+    padding: auto;
+    border: 2px solid green;
+    margin: 2em;
+    
+}
+nav {
+    font-size: 16px;
+    display: grid;
+    text-align: center;
+
+}
+nav a{
+    display: block;
+    background-color: black;
+    float: left;
+    padding: 20px 130px;
+}
+.myself{
+    max-width: 30%;
+    max-height: 30%;
+    float: right;
+    padding: 15px;
+}
+.card-links {
+    border: 2px solid black;
+}
+.home-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+    background-color:rgb(15, 99, 99);
+    padding: 10px;
+    margin: 4em;
+    border-radius: 20px;
+    position: absolute;
+    
+}
+
+.home-grid > div {
+    background-color: rgba (255, 255, 2.55, 0.8)
+    text-align: center;
+    position: relative;
+
+ }
+ .card {
+    padding: 30px;
+    text-align: center;
+    background: white;
+    border: 1px solid brown;
+    padding: 0%;
+    grid-gap: 10px;
+    
+
+ }
+
+p.header1 {
+    border: 1px solid white;
+    text-align:center;
+}
+ .card2 {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    text-align:center;
+
+ }
+#header2 {
+    background-color: gray;
+    font-style: blue;
+    border: 1px solid green;
+}
+ p.solid {
+    border-style: solid;
+    border: 1px;
+ }
+ style

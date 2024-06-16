@@ -1,9 +1,8 @@
 body {
     width: 100%;
-    height: auto;
+    min-height: 100%;
     background-color: gray;
     font-family:'Times New Roman', Times, serif
-
 }
 header {
     background-color: white;
@@ -11,8 +10,7 @@ header {
     text-align: center;
     padding: auto;
     border: 2px solid green;
-    margin: 2em;
-    
+    margin: 1%;
 }
 nav {
     font-size: 16px;
@@ -24,7 +22,8 @@ nav a{
     display: block;
     background-color: black;
     float: left;
-    padding: 20px 130px;
+    padding: 20px 135px;
+    float:inline-end;
 }
 .myself{
     max-width: 30%;
@@ -38,11 +37,11 @@ nav a{
 .home-grid {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 15px;
+    gap: 5px;
     background-color:rgb(15, 99, 99);
-    padding: 10px;
-    margin: 4em;
-    border-radius: 20px;
+    padding: 30px;
+    margin: 1em;
+    border-radius: 30px;
     position: absolute;
     
 }
@@ -56,32 +55,25 @@ nav a{
  .card {
     padding: 30px;
     text-align: center;
-    background: white;
+    background: rgb(255, 255, 255);
     border: 1px solid brown;
-    padding: 0%;
+    padding: 5%;
     grid-gap: 10px;
-    
+    border-radius: 20px;
 
  }
 
-p.header1 {
-    border: 1px solid white;
-    text-align:center;
-}
+
  .card2 {
     border: 1px solid black;
     border-radius: 20px;
     padding: 10px;
     text-align:center;
 
- }
-#header2 {
-    background-color: gray;
-    font-style: blue;
-    border: 1px solid green;
 }
- p.solid {
-    border-style: solid;
-    border: 1px;
- }
- style
+.footer {
+    position: absolute;
+    bottom: 0;
+    left:  0;
+    z-index: 10;
+}

@@ -1,79 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
 body {
-    width: 100%;
-    min-height: 100%;
-    background-color: gray;
-    font-family:'Times New Roman', Times, serif
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
 }
+ 
 header {
-    background-color: white;
-    font-size: 12px;
+    background: #2a3d55;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-    padding: auto;
-    border: 2px solid green;
-    margin: 1%;
 }
+ 
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+ 
+header h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+ 
+header .highlight {
+    color: #ffd700;
+}
+ 
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+ 
 nav {
-    font-size: 16px;
-    display: grid;
-    text-align: center;
-
+    margin: 0 auto;
+ 
 }
-nav a{
+ 
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+ 
+nav a {
     display: block;
-    background-color: black;
-    float: left;
-    padding: 20px 135px;
-    float:inline-end;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
 }
-.myself{
-    max-width: 30%;
-    max-height: 30%;
-    float: right;
-    padding: 15px;
+ 
+nav a:hover {
+    text-decoration: overline;
 }
-.card-links {
-    border: 2px solid black;
+ 
+.active {
+    color: yellow;
 }
-.home-grid {
+ 
+@media (min-width: 640px) {
+    .hamburger {
+        display: none;
+    }
+ 
+    nav ul {
+        display: flex;
+    }
+ 
+    nav ul li {
+        flex: 1 1 100%;
+    }
+}
+ 
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
     display: grid;
-    grid-template-columns: auto auto;
-    gap: 5px;
-    background-color:rgb(15, 99, 99);
-    padding: 30px;
-    margin: 1em;
-    border-radius: 30px;
-    position: absolute;
-    
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
 }
-
-.home-grid > div {
-    background-color: rgba (255, 255, 2.55, 0.8)
-    text-align: center;
-    position: relative;
-
- }
- .card {
-    padding: 30px;
-    text-align: center;
-    background: rgb(255, 255, 255);
-    border: 1px solid brown;
-    padding: 5%;
-    grid-gap: 10px;
-    border-radius: 20px;
-
- }
-
-
- .card2 {
-    border: 1px solid black;
-    border-radius: 20px;
+ 
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+ 
+.card h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    background: #2a3d55;
+    color: #fff;
     padding: 10px;
-    text-align:center;
-
+    border-radius: 5px;
 }
-.footer {
-    position: absolute;
-    bottom: 0;
-    left:  0;
-    z-index: 10;
+ 
+.card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+}
+ 
+.about-me .content1,
+.about-me .content2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+ 
+.about-me .content1 p {
+    flex: 1;
+    margin-right: 20px;
+    align-self: baseline;
+}
+ 
+.about-me .content2 p {
+    flex: 1;
+    margin-left: 20px;
+    align-self: baseline;
+}
+ 
+.about-me .content1 img,
+.about-me .content2 img {
+    max-width: 300px;
+    height: auto;
+    margin: 0;
+    border-radius: 3px;
+}
+ 
+.resources ul {
+    list-style: none;
+    padding: 0;
+}
+ 
+.resources ul li {
+    margin-bottom: 10px;
+}
+ 
+.resources ul li a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+ 
+.resources ul li a:hover {
+    color: #0056b3;
+}
+ 
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #2a3d55;
+    color: #fff;
+}
+ 
+footer p {
+    margin: 10px 0;
+}
+ 
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+ 
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+ 
+    main {
+        grid-template-columns: 1fr;
+    }
+ 
+    .about-me .content1,
+    .about-me .content2 {
+        flex-direction: column;
+        text-align: center;
+    }
+ 
+    .about-me .content1 p,
+    .about-me .content2 p {
+        margin: 0 0 20px 0;
+    }
+ 
+    .about-me .content1 img,
+    .about-me .content2 img {
+        max-width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+ 
+    .card h2 {
+        font-size: 18px;
+    }
+ 
+    header h1 {
+        font-size: 20px;
+    }
 }

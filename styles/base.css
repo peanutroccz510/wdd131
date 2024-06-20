@@ -7,21 +7,27 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #ffffff;
+    color: #000000;
     padding: 20px;
 }
  
 header {
-    background: #2a3d55;
-    color: #fff;
+    background: #018675bd;
+    max-width: 1200px;
+    margin: auto;
+    color: #000000;
     padding: 20px 0;
     text-align: center;
+
+    
 }
  
 .header-content {
     max-width: 1200px;
     margin: 0 auto;
+    max-height: 70px;
+
 }
  
 header h1 {
@@ -30,23 +36,27 @@ header h1 {
 }
  
 header .highlight {
-    color: #ffd700;
+    color: #502b01;
 }
  
 .hamburger {
-    display: none;
+    display:none;
     font-size: 30px;
     cursor: pointer;
 }
  
 nav {
     margin: 0 auto;
+
+    
  
 }
  
 nav ul {
     list-style-type: none;
     padding: 0;
+    background-color: #502b01;
+    
 }
  
 nav a {
@@ -54,17 +64,23 @@ nav a {
     color: #fff;
     text-align: center;
     padding: 1rem;
-    text-decoration: none;
+    
+    
 }
  
 nav a:hover {
+    background-color: #e49115a6;
     text-decoration: overline;
 }
  
 .active {
-    color: yellow;
+    color: #ffffff;
 }
- 
+   
+footer {
+    font-size: 12px;
+}
+    
 @media (min-width: 640px) {
     .hamburger {
         display: none;
@@ -78,6 +94,7 @@ nav a:hover {
         flex: 1 1 100%;
     }
 }
+
  
 main {
     max-width: 1200px;
@@ -89,19 +106,20 @@ main {
 }
  
 .card {
-    background: #fff;
+    background: #e49115a6;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
  
 .card h2 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 20px;
-    background: #2a3d55;
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
+    background: #018675bd;
+    color: #502b01;
+    padding: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
 }
  
 .card img {
@@ -129,8 +147,9 @@ main {
     flex: 1;
     margin-left: 20px;
     align-self: baseline;
+    
 }
- 
+
 .about-me .content1 img,
 .about-me .content2 img {
     max-width: 300px;
@@ -149,24 +168,25 @@ main {
 }
  
 .resources ul li a {
-    color: #007bff;
+    color: #000000;
     text-decoration: none;
     transition: color 0.3s;
 }
  
 .resources ul li a:hover {
-    color: #0056b3;
+    color: #018675bd;
 }
  
 footer {
     text-align: center;
-    padding: 20px 0;
-    background: #2a3d55;
-    color: #fff;
+    padding: 5px 0;
+    background: #018675bd;
+    color: #502b01;
+    height: 40%;
 }
  
 footer p {
-    margin: 10px 0;
+    margin: 5px 0;
 }
  
 @media (max-width: 768px) {
@@ -191,21 +211,23 @@ footer p {
  
     .about-me .content1 p,
     .about-me .content2 p {
-        margin: 0 0 20px 0;
+        margin: 0 0 10px 0;
     }
  
     .about-me .content1 img,
     .about-me .content2 img {
         max-width: 80%;
-        height: auto;
         margin: 0 auto;
+        
     }
  
     .card h2 {
         font-size: 18px;
+        
     }
  
     header h1 {
         font-size: 20px;
     }
+
 }

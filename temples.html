@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Temples">
+    <meta name="author" content="Penina Fa'afiu">
+    <link href="styles/temples.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>WDD 131 - Dynamic Web Fundamentals -</title>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+ 
+<body>
+    <header>
+        <div class="header-content">
+            <h1>*LDS TEMPLES* Photo Album </h1>
+                <div class="hamburger" id="hamburger"></div>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">OLD</a></li>
+                    <li><a href="#">NEW</a></li>
+                    <li><a href="#">SMALL</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+    <h1><u>HOME</u></h1>
+        <img src="images/oaklandtemple.png" alt="temple">
+        <p>Oakland, California temple</p>
+        <img src="images/americansamoatemple.jpg" alt="temple">
+        <p>Tutuila, American Samoa Temple</p>
+        <img src="images/apiasamoatemple.jpg" alt="temple">
+        <p>Apia, Samoa Temple</p>
+        <img src="images/laietemple.jpg" alt="temple">
+        <p>Laie, Hawai'i Temple</p>
+        <img src="images/sandiegotemple.jpg" alt="temple">
+        <p>San Diego, California Temple</p>
+        <img src="images/saratogaspringstemple.jpg" alt="temple">
+        <p>Saratoga Springs, Utah Temple</p>
+        <img src="images/oaklandtemple.png" alt="temple">
+        <p>Oakland temple</p>
+        <img src="images/oaklandtemple.png" alt="temple">
+        <p>Oakland temple</p>
+    
+    </main>
+    <footer>
+        <p>
+            &copy;2024 &#128059; <span id="currentyear">Penina M. Fa'afiu &#128059; California, USA </span>
+        </p>
+       <p>Last Modified</p><p id="date"><script>let text = document.lastModified;document.getElementById("date").innerHTML = text;</script>
+        </p>
+    </footer>
+</body>
+ 
+</html>

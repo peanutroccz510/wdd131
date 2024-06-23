@@ -8,7 +8,7 @@
     <meta name="author" content="Penina Fa'afiu">
     <link href="styles/temples.css" rel="stylesheet">
     <link href="styles/temples-large.css" rel="stylesheet">
-    <link src="scripts/temples.js" rel="stylesheet">
+    <link href="scripts/temples.js" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>TEMPLE ALBUM</title>
     
@@ -16,51 +16,50 @@
 
 <body>
     <header>
-        <p span=heading><h2>TEMPLE ALBUM</h2></span></header>
-        <div class="header-content">
-            <div class="hamburger" id="hamburger"></div>
-            <nav>
-                <ul id="nav-links">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">OLD</a></li>
-                    <li><a href="#">NEW</a></li>
-                    <li><a href="#">SMALL</a></li>
-                </ul>
-            </nav>
-        </div>
+    <h2>TEMPLE ALBUM</h2></header>
+    <a id="menu" href="#"></a>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">OLD</a></li>
+            <li><a href="#">NEW</a></li>
+            <li><a href="#">SMALL</a></li>
+        </ul>    
+    </nav>
+        
     <main>
         <h1><u>HOME</u></h1>
-        <figure><img src="images/oaklandtemple.png" alt="temple1">
-        <figcaption>Oakland, California Temple</figcaption></figure>
+        <figure><img src="images/oaklandtemple.png" alt="temple1"><figcaption>Oakland, California Temple</figcaption></figure>
 
-        <figure><img src="images/oaklandtemple.png" alt="temple2">
-        <figcaption>Tutuila, American Samoa Temple</figcaption></figure>
+        <figure><img src="images/oaklandtemple.png" alt="temple2"><figcaption>Tutuila, American Samoa Temple</figcaption></figure>
 
-        <figure><img src="images/oaklandtemple.png" alt="temple3">
-        <figcaption>Apia, Samoa Temple</figcaption></figure>
+        <figure><img src="images/oaklandtemple.png" alt="temple3"><figcaption>Apia, Samoa Temple</figcaption></figure>
 
-        <figure><img src="images/oaklandtemple.png" alt="temple4">
-        <figcaption>Laie, Hawai'i Temple</figcaption></figure>
+        <figure><img src="images/oaklandtemple.png" alt="temple4"><figcaption>Laie, Hawai'i Temple</figcaption></figure>
 
-        <figure><img src="images/oaklandtemple.png" alt="temple5">
-        <figcaption>San Diego, California Temple</figcaption></figure>
+        <figure><img src="images/oaklandtemple.png" alt="temple5"><figcaption>San Diego, California Temple</figcaption></figure>
 
-        <figure><img src="images/oaklandtemple.png" alt="temple6">
-        <figcaption>Saratoga Springs, Utah Temple</figcaption></figure>
+        <figure><img src="images/oaklandtemple.png" alt="temple6"><figcaption>Saratoga Springs, Utah Temple</figcaption></figure>
 
-        <figure><img src="images/oaklandtemple.png" alt="temple7placeholder">
-        <figcaption>Oakland, California Temple</figcaption></figure>
+        <figure><img src="images/oaklandtemple.png" alt="temple7placeholder"><figcaption>Oakland, California Temple</figcaption></figure>
 
-        <figure><img src="images/oaklandtemple.png" alt="temple8placeholder">
-        <figcaption>Oakland, California Temple</figcaption></figure>
+        <figure><img src="images/oaklandtemple.png" alt="temple8placeholder"><figcaption>Oakland, California Temple</figcaption></figure>
 
-        <figure><img src="images/oaklandtemple.png" alt="temple9placeholder">
-        <figcaption>Oakland, California Temple</figcaption></figure>
+        <figure><img src="images/oaklandtemple.png" alt="temple9placeholder"><figcaption>Oakland, California Temple</figcaption></figure>
     
 
     
     </main>
+    <footer>
+        <p>
+            &copy;2024 &#128059; <span id="currentyear">Penina M. Fa'afiu &#128059; California, USA </span>
+        </p>
     
+       <p>Last Modified:<p id="date"></p></p>
+        <script>let text = document.lastModified;document.getElementById("date").innerHTML = text;
+        </script>
+    
+</footer>
 </body>
 
 </html>

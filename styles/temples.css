@@ -1,64 +1,93 @@
-
-
 *{
     margin:0px;
     padding:0px;
     box-sizing: border-box;
+
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #000263;
+    padding: 20px;
 }
-
-
-/*mobile ********/
-header {
-    background-color: #f02525;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2%;
-    border: 1px solid blue;
-}
-
-header, main {
-    margin: 0px auto;
-}
-h1 {
-    font-size: 2rem;
-}
-nav {
-    background-color: purple;
-    margin: 0 auto;
+header, nav {
+    background: #000000;
     max-width: 1600px;
+    margin: 0;
+    color: #ffffff;
+    padding: 1px 0;
+    text-align: center;
+    font-size: 10px;
 }
+
 nav ul {
     list-style-type: none;
+    
 
 }
 nav a {
     display: block;
-    color: white;
+    color:#ffffff;
     text-align: center;
     padding: 1rem;
     text-decoration: none;
+    text-align: center;
+    justify-content: right;
+
 }
 
 nav a:hover {
-    border: 1px solid white;
+    border: 1px solid #000263;
 }
 
 .active {
     color: yellow;
 }
 
-@media (max-width: 640px) {
+#menu { 
+        display: block;         
+        font-size: 2rem; 
+        font-weight: 700; 
+        text-decoration: none; 
+        padding: .5rem .75%; 
+        background-color: #757575; 
+        color:#000; 
+} 
+        
+#menu::before{         
+    content: "=";
+     
+} 
+.column::after{
+    content: "x";
+    display: table;
+    clear: both;
+}
+.footer {
+    border: 2px solid black;
+    text-align: center;
+}
+
+/* larger views****************/
+@media (min-width: 768px) {   
     nav ul {
-        display: flex;
+        display: flex;    
     }
     nav ul li {
-        flex: 1 1 10%;
-        
+        flex: 1 1 100%;
     }
+}
+
+.figure {
+        display: grid;
+        grid-auto-columns: 2fr;
+        grid-gap: 10px;
+        padding: 10px;
+        max-width: 100%;
+        min-width: 100%;
+        background-color: rgb(247, 232, 234);
+        border: 2px solid black;
+
 }

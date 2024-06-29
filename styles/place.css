@@ -47,12 +47,12 @@ img {
 @media (min-width: 40em) {
     body{
         grid-template-columns: 2fr 1f;
-        grid-column-rows: auto 1fr auto;
+        grid-template-columns: auto 1fr auto;
         grid-template-areas:
-            'header banner';
-            'main main';
-            'div main';
-            'div main';
+            'header banner'
+            'main main'
+            'div main'
+            'div main'
         
     }
 }

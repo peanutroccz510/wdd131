@@ -23,7 +23,8 @@ header h1 {
 }
 
 img {
-    width: 50%;
+    display: grid;
+    grid-template-columns:auto;
 
 }
 
@@ -40,6 +41,7 @@ img {
 }
 
 .container-weather {
+    display: grid;
     background-color: green;
 
 }

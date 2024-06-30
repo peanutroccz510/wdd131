@@ -9,17 +9,16 @@ body {
 }
 
 header {
-    background-color: rgb(243, 243, 243);
-    margin-top: 2%;
+    background-color: #f3f3f3;
+    grid-template-columns: repeat(4, 4fr);
 }
 
 header h1 {
     display: grid;
-    grid-template-columns: 1, 25%;
     text-align: center;
     font-size: 32px;
     color: black;
-    border: 3px solid rgb(209, 67, 90);
+    border: 3px solid rgb(250, 0, 117);
 
 }
 

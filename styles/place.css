@@ -1,4 +1,4 @@
-body{
+body {
     display: grid;
     grid-gap: 1em;
     grid-template-rows: auto auto auto auto;
@@ -10,58 +10,40 @@ body{
 
 }
 
-header{
+header {
     background-color: aliceblue;
     grid-column: span 2;
-  
-}
-header h1{
-    text-align: center;
-    font-size: 32px;
 
 }
+
+header h1 {
+    text-align: center;
+    font-size: 32px;
+    color: black;
+    border: 3px solid rgb(209, 67, 90);
+
+}
+
 img {
     width: 100%;
-    
+
 }
 
 .container-country {
     background-color: yellow;
     border: 3px solid purple;
 }
+
 .container-country h1 {
     background: white;
-    max-width: max-content; 
 }
+
 .container-weather {
     background-color: green;
-    opacity: 35%;
-    grid-template-columns: 3/5;
 
 }
+
 .container-weather h1 {
     background: white;
-    max-width: max-content;
 }
-
-@media (min-width: 40em) {
-    body{
-        grid-template-columns: 2fr 1f;
-        grid-template-columns: auto 1fr auto;
-        grid-template-areas:
-            'header banner'
-            'main main'
-            'div main'
-            'div main'
-        
-    }
-}
-header {
-    grid-column: span 2;
-
-}
-header {grid-area: banner;}
-main {grid-area: main;}
-div {grid-area: div;}
-div {grid-area: div;}
 

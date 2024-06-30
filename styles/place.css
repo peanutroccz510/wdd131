@@ -52,7 +52,7 @@ img {
 .ul {
     display: grid;
     grid-gap: 1.5em;
-    max-width: 25%;
+    max-width: 25px;
 }
 
 footer {

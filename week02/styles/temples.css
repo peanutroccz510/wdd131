@@ -7,81 +7,66 @@ body {
     font-style: normal;
 }
 
-.h1 {
-    font: white;
+header {
+    background-color: yellow;
+}
 
-    
+grid-container {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+img {
+  grid-column: 1 / span 2; /* Spans across both columns */
+  grid-row: 1; /* Places the image in the first row */
+}
+
+figcaption {
+  grid-column: 1 / span 2; /* Also spans across both columns */
+  grid-row: 2; /* Places the caption in the second row */
 }
 
 nav {
     background-color: navy;
-    width: 100%;
+    margin: 0;
+    padding: 1px;
     border: 1px solid rgb(0, 0, 0);
-    text-align: left;
-   
-
 }
 
 nav ul {
-    display: flex;
-    justify-content: space-evenly;
+    list-style-type: none;
+    text-align: center;
     
 }
 
 nav a:hover {
-    background-color: white;
-    border-width: 1px solid;
+    padding: 1px;
+    margin: 1px;
+    border: 1px solid black;
 }
 
-.grid-container {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-items: center;
-    font-size: 10px;
-    margin: 5%;
-    padding: 5%;
+main {
+    display: grid;
+    grid-template-columns: auto;
+
 }
 
-figure {
-    align-content: center;
-}
 
 footer {
     background-color: navy;
     border: 1px black solid;
-    text-align: center;
+ 
 
 }
 
+/* Adjust layout for smaller screens */
+@media (max-width: 600px) {
+  figure {
+    grid-template-columns: 1fr; /* Stack elements vertically on small screens */
+  }
 
-.ham-menu {
-    display: inline-block;
-    cursor: pointer;
+  figcaption {
+    text-align: center; /* Center caption for better readability */
+  }
 }
-
-.opt1, .opt2, .opt3 {
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
-    transition: 0.4s;
-}
-
-.change .opt1 {
-    transform: translate(0, 11px)
-rotate(-45);
-}
-
-.change .opt2 {
-    opacity: 0;
-}
-
-.change .opt3 {
-    opacity: 0;
-}
-
-.change .opt5 {
-    transform: translate(0, -11px);
-rotate: 45def;
-}
-

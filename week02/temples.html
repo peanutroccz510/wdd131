@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="week02/styles/temples.css">
+    <link rel="stylesheet" href="week02/styles/temples-large.css">
+    <script defer src="week02/scripts/temples.js"></script>
+    <title>WDD 131 - TEMPLES</title>
+</head>
+
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+
+        <nav>
+           <div class="ham-menu" onclick="myFunction(this)">
+            <div class="opt1"></div>
+            <div class="opt2"></div>
+            <div class="opt3"></div>
+            <div class="opt4"></div>
+            <div class="opt5"></div>
+           </div>
+        </nav>
+        <nav>   
+            <ul>
+            <a href="#">HOME</a>
+            <a href="#">OLD</a>
+            <a href="#">NEW</a>
+            <a href="#">LARGE</a>
+            <a href="#">SMALL</a>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Temples</h1>
+       <div class="grid-container">
+        <figure><img src="week02/images/oakland_205102.jpg" alt="temple" width="75px">
+        <figcaption>Oakland Temple in California, U.S.A</figcaption>
+        </figure>
+         <figure><img src="week02/images/oakland_205102.jpg" alt="temple" width="75px">
+        <figcaption>Oakland Temple in California, U.S.A</figcaption>
+        </figure>
+         <figure><img src="week02/images/oakland_205102.jpg" alt="temple" width="75px">
+        <figcaption>Oakland Temple in California, U.S.A</figcaption>
+        </figure>
+         <figure><img src="week02/images/oakland_205102.jpg" alt="temple" width="75px">
+        <figcaption>Oakland Temple in California, U.S.A</figcaption>
+        </figure>
+         <figure><img src="week02/images/oakland_205102.jpg" alt="temple" width="75px">
+        <figcaption>Oakland Temple in California, U.S.A</figcaption>
+        </figure>
+         <figure><img src="week02/images/oakland_205102.jpg" alt="temple" width="75px">
+        <figcaption>Oakland Temple in California, U.S.A</figcaption>
+        </figure>
+         <figure><img src="week02/images/oakland_205102.jpg" alt="temple" width="75px">
+        <figcaption>Oakland Temple in California, U.S.A</figcaption>
+        </figure>
+         <figure><img src="week02/images/oakland_205102.jpg" alt="temple" width="75px">
+        <figcaption>Oakland Temple in California, U.S.A</figcaption>
+        </figure>
+         <figure><img src="week02/images/oakland_205102.jpg" alt="temple" width="75px">
+        <figcaption>Oakland Temple in California, U.S.A</figcaption>
+        </figure>
+       </div>
+
+    </main>
+
+<footer>
+    <p> <span id="currentyear">&copy; 2025</span> - Penina Fa'afiu - California</p>
+    Last Modified:<span id="lastModified"></span> 
+    <script>
+        if (document.lastModified) {
+            document.getElementById('lastModified').innerHTML = new Date(document.lastModified).toLocaleString();
+    }
+    </script>
+</footer>
+</body>
+
+</html>

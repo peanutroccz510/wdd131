@@ -1,14 +1,23 @@
 body {
     background: none;
-    margin: 0%;
     padding: 0%;
 
 }
 
+.h1 {
+    font: white;
+
+}
+
+header {
+    
+}
+
 nav {
     background-color: navy;
-    width: auto;
-    border: 1px solid rgb(0, 0, 0)
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    text-align: left;
    
 
 }
@@ -16,8 +25,7 @@ nav {
 nav ul {
     display: flex;
     justify-content: space-evenly;
-    padding: 0;
-    font: white;
+    
 }
 
 nav a:hover {
@@ -28,14 +36,20 @@ nav a:hover {
 .grid-container {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
     font-size: 10px;
-    margin: 2rem;
-    padding: 0rem;
+    margin: 5%;
+    padding: 5%;
 }
 
-.footer {
+figure {
+    align-content: center;
+}
+
+footer {
     background-color: navy;
-    justify-content: center;
+    border: 1px black solid;
+    text-align: center;
 
 }
 

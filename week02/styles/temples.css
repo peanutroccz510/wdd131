@@ -8,36 +8,48 @@ body {
 }
 
 header {
-    background-color: yellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color:#e6d18f;
 }
 
-grid-container {
+h1 {
+  color: #547340;
+}
+
+.grid-container {
     display: grid;
-    justify-items: center;
-    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 3rem;
+    grid-gap: 2rem;
 }
 
-img {
-  grid-column: 1 / span 2; /* Spans across both columns */
-  grid-row: 1; /* Places the image in the first row */
+.grid-container figure {
+  display: block;
+  justify-items: center;
 }
 
-figcaption {
-  grid-column: 1 / span 2; /* Also spans across both columns */
-  grid-row: 2; /* Places the caption in the second row */
+.grid-container figcaption {
+  text-align: center;
+  background-color: tan;
 }
+
 
 nav {
-    background-color: navy;
-    margin: 0;
+    background-color: #547340;
     padding: 1px;
     border: 1px solid rgb(0, 0, 0);
+    width: 100%;
+    justify-content:  right;
+  
 }
 
 nav ul {
     list-style-type: none;
-    text-align: center;
-    
+    display: flex;
+    gap: 30px;
 }
 
 nav a:hover {
@@ -46,27 +58,85 @@ nav a:hover {
     border: 1px solid black;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f0f0f0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333333;
+  padding: 0.5rem 1rem;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.hamburger-menu span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333333;
+  margin: 5px 0;
+}
+
 main {
     display: grid;
     grid-template-columns: auto;
+    color: #547340;
 
 }
 
 
 footer {
-    background-color: navy;
+    color: #547340;
+    background-color:#e6d18f;
     border: 1px black solid;
+    justify-items: center;
  
 
 }
 
 /* Adjust layout for smaller screens */
-@media (max-width: 600px) {
+@media screen and (max-width: 700px) {
+
+  .grid-container {
+    align-content: center;
+  }
   figure {
     grid-template-columns: 1fr; /* Stack elements vertically on small screens */
+    align-content: center;
   }
 
   figcaption {
     text-align: center; /* Center caption for better readability */
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .nav-links.active {
+    display: flex;
   }
 }

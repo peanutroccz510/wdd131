@@ -17,17 +17,20 @@ header {
 
 h1 {
   color: #547340;
+  text-decoration:none;
 }
 
 h2 {
-  color: #547340;
-  text-decoration-style: dotted;
+  color: #000000;
+  text-decoration: underline;
+  padding: 2rem;
+  text-align: center;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    padding: 3rem;
+    padding: 1rem;
     grid-gap: 2rem;
 }
 
@@ -35,17 +38,15 @@ h2 {
   display: block;
   text-align: center;
 
- 
-  
 }
 
 .grid-container figure img {
-  width: 50%;
+  width: 95%;
+  height: 80%;
 
 }
 
 .grid-container figcaption {
-  background-color: tan;
   text-align: center;
 }
 
@@ -53,7 +54,6 @@ h2 {
 nav {
     background-color: #547340;
     padding: 1px;
-    border: 1px solid rgb(0, 0, 0);
     width: 100%;
     justify-content:  right;
   
@@ -76,7 +76,7 @@ nav a:hover {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #f0f0f0;
+  background-color: #e6d18f;
 }
 
 .nav-links {
@@ -116,8 +116,7 @@ main {
 
 footer {
     color: #547340;
-    background-color:#e6d18f;
-    border: 1px black solid;
+    background-color: #e6d18f;
     justify-items: center;
  
 
@@ -128,6 +127,7 @@ footer {
 
   .grid-container {
     align-content: center;
+    padding: 1rem;
   }
   figure {
     grid-template-columns: 1fr; /* Stack elements vertically on small screens */

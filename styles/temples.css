@@ -17,6 +17,11 @@ header {
 
 h1 {
   color: #547340;
+  text-decoration-style:none;
+}
+h2 {
+  color: #547340;
+  text-decoration-style: dotted;
 }
 
 .grid-container {

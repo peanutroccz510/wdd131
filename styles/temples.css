@@ -28,12 +28,20 @@ h1 {
 
 .grid-container figure {
   display: block;
-  justify-items: center;
+  text-align: center;
+
+ 
+  
+}
+
+.grid-container figure img {
+  width: 50%;
+
 }
 
 .grid-container figcaption {
-  text-align: center;
   background-color: tan;
+  text-align: center;
 }
 
 

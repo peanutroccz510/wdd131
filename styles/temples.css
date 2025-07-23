@@ -17,8 +17,8 @@ header {
 
 h1 {
   color: #547340;
-  text-decoration-style:none;
 }
+
 h2 {
   color: #547340;
   text-decoration-style: dotted;
@@ -109,7 +109,7 @@ nav a:hover {
 main {
     display: grid;
     grid-template-columns: auto;
-    color: #547340;
+    color: #000000;
 
 }
 

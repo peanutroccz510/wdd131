@@ -23,6 +23,7 @@ h1 {
 main {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	justify-items: center;
 	padding: 1rem;
 	grid-gap: 2rem;
 
@@ -36,8 +37,8 @@ h2 {
 
 
 article p {
-	text-align: block;
-	justify-content: center;
+	grid-column:2/4;
+
 	
 }
 

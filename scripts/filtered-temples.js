@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded'), () => {
         navLinks.classList.toggle('active');
     }
 
-}    
+}  
     const temples = [
  { 
     templeName: "Aba Nigeria",
@@ -66,11 +66,11 @@ document.addEventListener('DOMContentLoaded'), () => {
   },
   {
     templeName: "Oakland California Temple",
-    location: Oakland, California,
+    location: "Oakland, California",
     dedicated: "1964, November, 17-19",
     area: 80157,
     imageUrl:
-    "https://churchofjesuschristtemples.org/oakland-california-temple/photographs/#Gallery-2"
+    "https://churchofjesuschristtemples.org/assets/img/temples/oakland-california-temple/oakland-california-temple-33338.jpg"
   },
   {
     templeName: "Pago Pago American Samoa Temple",
@@ -78,14 +78,16 @@ document.addEventListener('DOMContentLoaded'), () => {
     siteDedication: "2021, October, 30",
     area: 17000,
     imageUrl:
-    "https://churchofjesuschristtemples.org/oakland-california-temple/photographs/#Gallery-2"
+    "https://churchofjesuschristtemples.org/assets/img/temples/pago-pago-american-samoa-temple/pago-pago-american-samoa-temple-61941.jpg"
     },
     {
-  ttempleName: "Apia Samoa Temple",
-    location: "Pesega, Apia Samoa",
-    dedicated: "2005, September, 4",
-    area: 18691,
+   templeName: "San Diego California Temple",
+    location: "San Diego, California",
+    dedicated: "1993, April, 25-30",
+    area: 72000,
     imageUrl:
-    "hhttps://churchofjesuschristtemples.org/apia-samoa-temple/photographs/#Gallery-28"
-}
+    "https://churchofjesuschristtemples.org/assets/img/temples/san-diego-california-temple/san-diego-california-temple-59828.jpg"
+    },    
+        
+
 ];

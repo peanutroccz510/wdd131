@@ -27,12 +27,15 @@ h2 {
   text-align: center;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    padding: 1rem;
-    grid-gap: 2rem;
+.card-container {
+  display: flex; /* Use flexbox for responsive layout */
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+  justify-content: center; /* Center the cards horizontally */
+  gap: 20px; /* Space between cards */
+  max-width: 1200px; /* Optional: limit the overall width */
+  margin: 0 auto; /* Center the container */
 }
+
 
 .grid-container figure {
   display: block;

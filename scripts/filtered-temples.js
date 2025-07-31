@@ -3,12 +3,14 @@ document.addEventListener('DOMContentLoaded'), () => {
     const navLinks = document.querySelector('.nav-links');
 
     hamburgerMenu.addEventListener('click'),() => {
+        hamburgerMenu.classList.toggle('active');
         navLinks.classList.toggle('active');
     }
-
 }  
-    const temples = [
- { 
+  
+
+const temples = [
+  {
     templeName: "Aba Nigeria",
     location: "Aba, Nigeria",
     dedicated: "2005, August, 7",
@@ -91,3 +93,4 @@ document.addEventListener('DOMContentLoaded'), () => {
         
 
 ];
+

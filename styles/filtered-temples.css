@@ -15,8 +15,16 @@ header {
 
 }
 
+main {
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
 h1 {
   color: #547340;
+  text-align: center;
   text-decoration:none;
 }
 
@@ -28,31 +36,33 @@ h2 {
 }
 
 .card-container {
-  display: flex; /* Use flexbox for responsive layout */
-  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+  display: grid; /* Use flexbox for responsive layout */
+   /* Allow cards to wrap to the next line */
   justify-content: center; /* Center the cards horizontally */
   gap: 20px; /* Space between cards */
   max-width: 1200px; /* Optional: limit the overall width */
   margin: 0 auto; /* Center the container */
 }
 
-
-.grid-container figure {
-  display: block;
-  text-align: center;
-
-}
-
-.grid-container figure img {
-  width: 95%;
-  height: 80%;
-
-}
-
-.grid-container figcaption {
+.temple-card {
+  background-color: #fa9625c2;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
+  width: 300px; /* Adjust as needed */
+  padding: 15px;
   text-align: center;
 }
 
+.temple-card .card-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.card-image img {
+    animation: 15s;
+}
 
 nav {
     background-color: #547340;
@@ -63,7 +73,7 @@ nav {
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     display: flex;
     gap: 30px;
 }
@@ -101,12 +111,13 @@ nav a:hover {
   padding: 0;
 }
 
-.hamburger-menu span {
+.bar {
   display: block;
   width: 25px;
   height: 3px;
   background-color: #333333;
-  margin: 5px 0;
+  margin: 5px auto;
+
 }
 
 main {
@@ -125,34 +136,43 @@ footer {
 
 }
 
+
+@keyframes fade {
+    0% {
+        opacity: 5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 /* Adjust layout for smaller screens */
 @media screen and (max-width: 700px) {
 
-  .grid-container {
+  .card-image {
     align-content: center;
     padding: 1rem;
   }
-  figure {
-    grid-template-columns: 1fr; /* Stack elements vertically on small screens */
-    align-content: center;
-  }
-
-  figcaption {
-    text-align: center; /* Center caption for better readability */
-  }
+ 
 
   .nav-links {
     display: none;
     flex-direction: column;
     width: 100%;
     text-align: center;
+    position:fixed;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    
   }
 
   .hamburger-menu {
     display: block;
   }
 
-  .nav-links.active {
+  .hamburger-menu.active {
     display: flex;
+    background-color: blue;
   }
 }

@@ -1,0 +1,36 @@
+body {
+   background-color: beige;
+   margin: 1rem;
+}
+header {
+    background-color: #FFF200;
+    text-align: center;
+    border: solid 1px purple;
+}
+
+.sitepurpose {
+    background-color: #3aa7b1;
+    text-align: left;
+    border: 1px purple solid;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin: 1rem;
+}
+
+.scenarios {
+    background-color: #3aa7b1;
+    text-align: left;
+    border: 1px purple solid;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin: 1rem;
+}
+
+.sitename {
+    background-color: #3aa7b1;
+    text-align: left;
+    border: 1px purple solid;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin: 1rem;
+}

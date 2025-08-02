@@ -10,27 +10,43 @@ header {
 
 .sitepurpose {
     background-color: #3aa7b1;
+    width: 25rem;
     text-align: left;
     border: 1px purple solid;
     padding: 1rem;
-    border-radius: 2rem;
-    margin: 1rem;
+    border-radius: 1rem;
+    margin: 3%;
 }
 
 .scenarios {
     background-color: #3aa7b1;
+    width: 25rem;
     text-align: left;
     border: 1px purple solid;
     padding: 1rem;
-    border-radius: 2rem;
-    margin: 1rem;
+    border-radius: 1rem;
+    margin: 3%;
 }
 
 .sitename {
     background-color: #3aa7b1;
+    width: 25rem;
     text-align: left;
     border: 1px purple solid;
     padding: 1rem;
-    border-radius: 2rem;
-    margin: 1rem;
+    border-radius: 1rem;
+    margin: 3%;
 }
+
+h2 {
+
+    text-align: center;
+    margin: 1px;
+}
+
+.wireframe {
+    position: relative;
+    left: 35rem;
+    bottom: 30rem;
+ 
+};
